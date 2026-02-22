@@ -108,3 +108,33 @@ short age = 25;
 //  Fixed size: 4 bytes(usually) or sometimes 8 bytes(depending on the system)
 
 long number = 1234567899923;
+
+// Features of primitve data structures again
+//  with more detail
+
+// Fast access
+// Fixed size
+// Memory efficient
+// Portable
+// Directly supported by hardware
+
+// Primtive data structures are memory efficient because they
+//  use minimal amount of memory
+
+// Are directly supported by the hardware and therefore,
+//  operations can be performed very fast and efficiently
+
+
+// Limitations of Primitve data structures
+
+// Fixed size(cannot be shrinked or expanded dynamically)
+// Limited operations(only basic operations are supported and no
+//       advanced operations like searching, sorting etc.)
+// Store only a single value and thus, cant be used to store
+//     complex data, eg. student records or patient records etc.
+// Do not represent any relationship between different data
+//     elements
+
+
+
+
