@@ -29,23 +29,23 @@
 # Basic code for creating a singly linked list
 #  (in Python)
 
-class Node:
-    def __init__(self, new_data):
-        self.data = new_data
-        self.next = None
+# class Node:
+#     def __init__(self, new_data):
+#         self.data = new_data
+#         self.next = None
 
 # Creating nodes
-node1 = Node(10)
-node2 = Node(20)
-node3 = Node(30)
-node4 = Node(40)
+# node1 = Node(10)
+# node2 = Node(20)
+# node3 = Node(30)
+# node4 = Node(40)
 # Right now, these nodes are not linked to
 # to each other. They exist independently
 
 # Linking the nodes together
-node1.next = node2
-node2.next = node3
-node3.next = node4
+# node1.next = node2
+# node2.next = node3
+# node3.next = node4
 
 # node4.next = None because we didnt overwrite its default value
 
@@ -53,3 +53,50 @@ node3.next = node4
 # 1) Traversal
 #   Means visiting each node sequentially from head node to the
 #     last node 
+
+# Useful when we want to
+#  Print all the elements
+#  Searh for a value
+#  Find max/min
+#  Count no. of nodes
+# class Node:
+#     def __init__(self, new_data):
+#         self.data = new_data
+#         self.next = None
+
+# def traverseList(head):
+#         temp = head
+#         while temp is not None:
+#             print(temp.data, end = " ")
+#             if temp.next is not None:
+#                 print("->", end = " ")
+#             temp = temp.next
+#         print()
+
+# head = Node(10)
+# head.next = Node(20)
+# head.next.next = Node(30)
+# head.next.next.next = Node(40)
+# traverseList(head) # 10 -> 20 -> 30 -> 40
+
+
+# 2) Insertion
+#    Three types 
+#      a) Beginning     b) End     c) Specific position
+
+class Node:
+    def __init__(self, new_data):
+        self.data = new_data
+        self.next = None
+
+def insertAtBeginning(head, data):
+    newNode = Node(data)
+    newNode.next = head
+    return newNode
+
+node1 = Node(20)
+node2 = Node(30)
+node3 = Node(40)
+
+head = insertAtBeginning(node1, 10)
+
